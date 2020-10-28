@@ -73,7 +73,8 @@ class Library
         String data[]=borrowedUsers.split("\\|");
         for(String x : data)
         {
-            String a[]=x.split(",");
+            String a[];
+	    a=x.split(",");
             map.put(Integer.parseInt(a[0]),Integer.parseInt(a[1]));
         }
         return map;
